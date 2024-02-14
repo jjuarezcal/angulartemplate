@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+.layout {
+    width: 100%;
+    display: grid;
+    grid: "header header header" 1fr "aside-menu main main" 1fr "footer footer footer " 1fr / 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(66, 65, 64);
+}
+
+.aside-menu {
+    grid-area: aside-menu;
+    background-color: bisque;
+}
+
+.aside-menu__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main {
+    grid-area: main;
+    background-color: aqua;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
